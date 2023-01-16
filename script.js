@@ -1,7 +1,7 @@
 function generatePassword() {
   
   
-  var passLength = parseInt(prompt("How Long Would you like your passcode?","Choose a number 8-128"));
+  var passLength = parseInt(prompt("How long would you like your passcode to be?","Choose a number 8-128"));
 
   if (Number.isNaN(passLength) === true) {
     alert ("Please select a number!");
@@ -46,6 +46,11 @@ function generatePassword() {
     } else {
       characterType = characterType;
     };
+
+  if (characterType === "") {
+    alert ("You have to select at least one character type to include in your password!");
+    return "Your passcode will appear here :)";
+  };
 
 
     var result = "";
