@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+:root {
+  --pretty: #bde0fe; 
+  --pretty2: #6BAFEE; 
+  --pink: #ffc8dd;
+  --pink2: #ffafcc;
+
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  background-color: var(--pink);
+  font-family: "Press Start 2P";
 }
 
 html,
@@ -27,13 +40,14 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: var(--pretty2);
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--pink2);
   border-radius: 5px;
   border-width: 1px;
+  border: 9px solid var(--pretty2);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
@@ -42,13 +56,19 @@ header {
   padding: 30px 40px;
 }
 
-.card-header::after {
+.card-header, 
+.card-footer {
+  background-color: var(--pink2);
+  color: var(--pretty2);
+}
+
+/* .card-header::after {
   content: " ";
   display: block;
-  width: 100%;
-  background: #e7e9eb;
+  width: 45%;
+  background: var(--dark);
   height: 2px;
-}
+} */
 
 .card-body {
   min-height: 100px;
@@ -58,13 +78,13 @@ header {
   text-align: center;
 }
 
-.card-footer::before {
+/* .card-footer::before {
   content: " ";
   display: block;
-  width: 100%;
-  background: #e7e9eb;
+  width: 45%;
+  background: var(--dark);
   height: 2px;
-}
+} */
 
 .card-footer::after {
   content: " ";
@@ -74,8 +94,9 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: var(--pretty);
   border-radius: 25px;
+  border: 5px solid var(--pretty2);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
   color: hsl(0, 0%, 100%);
@@ -108,14 +129,15 @@ button[disabled] {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 85px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 5px dashed var(--pretty2);
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  font-family: "VT323";
 }
 
 @media (max-width: 690px) {

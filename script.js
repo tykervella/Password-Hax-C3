@@ -6,7 +6,7 @@ function generatePassword() {
   if (Number.isNaN(passLength) === true) {
     alert ("Please select a number!");
     return "Your passcode will appear here :)";
-  } else if (passLength >= 128) {
+  } else if (passLength >= 129) {
     alert ("Please select a smaller number!");
     return "Your passcode will appear here :)";
   } else if (passLength <= 7){
