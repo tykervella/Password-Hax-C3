@@ -1,6 +1,6 @@
 # Secure Password Generator
 
-![Webpage Preview](./preview.png)
+![Webpage Preview](./assets/preview.png)
 [Deployment Link](https://tykervella.github.io/Password-dot-com/)
 
 ---
